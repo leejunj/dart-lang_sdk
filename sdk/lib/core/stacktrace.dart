@@ -33,6 +33,8 @@ abstract class StackTrace {
   /// with care.
   factory StackTrace.fromString(String stackTraceString) = _StringStackTrace;
 
+  external static StackTrace get currentTest;
+
   /// Returns a representation of the current stack trace.
   ///
   /// This is similar to what can be achieved by doing:

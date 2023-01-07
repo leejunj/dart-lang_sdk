@@ -230,6 +230,11 @@ class _SyncIterator<T> implements Iterator<T> {
 
 @patch
 class StackTrace {
+
+  @patch
+  @pragma("vm:external-name", "StackTrace_current")
+  external static StackTrace get currentTest;
+
   @patch
   @pragma("vm:external-name", "StackTrace_current")
   external static StackTrace get current;
