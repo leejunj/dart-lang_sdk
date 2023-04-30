@@ -19,7 +19,7 @@ class FlutterTarget extends VmTarget {
   late final WidgetCreatorTracker _widgetTracker = WidgetCreatorTracker();
 
   static List<FlutterProgramTransformer> _flutterProgramTransformers = [];
-  static List<FlutterProgramTransformer> get flutterProgramTransformers = _flutterProgramTransformers;
+  static List<FlutterProgramTransformer> get flutterProgramTransformers => _flutterProgramTransformers;
 
   @override
   String get name => 'flutter';
